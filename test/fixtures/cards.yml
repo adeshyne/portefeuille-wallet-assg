@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  number: MyString
+  card_type: MyString
+  expMonth: MyString
+  expYear: MyString
+  code: MyString
+
+two:
+  number: MyString
+  card_type: MyString
+  expMonth: MyString
+  expYear: MyString
+  code: MyString

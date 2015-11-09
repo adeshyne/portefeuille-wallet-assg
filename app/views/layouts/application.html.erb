@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= yield(:title) %> | Ruby on Rails Tutorial Sample App</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body>
+
+  <header class="navbar navbar-fixed-top navbar-inverse">
+    <div class = "container">
+      <%= link_to "portefeuille", 'static/home', id:"logo" %>
+      <nav>
+        <ul class="nav navbar-nav navbar-right">
+         <li><%= link_to "Home", '/static/home' %></li>
+         <li><%= link_to "Help", '/static/help' %></li>
+         <li><%= link_to "Contact", '/static/contact' %></li>
+       </ul>
+     </nav>
+     </div>
+   </header>
+
+<div class="container">
+   <%= yield %>
+
+
+
+
+ </hr>
+
+ <footer class= "footer">
+    <small>
+      <a href= "www.nycda.com/">Brought to you by <span id="ade">A.D.E</span> copyright 2015</a>
+    </small>
+ </footer>
+  </div>
+  
+ </body>
+</html>
